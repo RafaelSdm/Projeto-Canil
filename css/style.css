@@ -158,3 +158,70 @@ footer{
     font-size: 16px;
     color: var(--main);
 }
+
+
+
+
+@media (max-width: 900px) {
+
+    .list{
+        grid-template-columns: (4,1fr);
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .list{
+        grid-template-columns: repeat(3. 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .banner{
+        height: 200px;
+        font-size: 29px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+
+    .list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+    header .container{
+        flex-direction: column;
+    }
+
+    header .container a{
+        text-align: center;
+    }
+
+    header input{
+        max-width: 100%;
+    }
+
+
+    ul li a{
+        padding: 5px 10px;
+    }
+
+
+    .list{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
