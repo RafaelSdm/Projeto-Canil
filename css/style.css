@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --pagebg: #fff;
+    --main: #102581;
+    --bglink: rgba(0,0,0,0.3);
+    --darkkbg: #fff;
+    --lightbg: #000;
+    --lighter: #444;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--pagebg);
+}
+
+.container{
+
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+
+}
+
+
+header{
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--main);
+}
+
+header input{
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 200px;
+}
+
