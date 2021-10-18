@@ -1,7 +1,9 @@
 import { type } from "os"
 
+type PetType = 'dog' | 'cat' | 'fish';
+
 type Pet = {
-    type: 'dog' | 'cat' | 'fish',
+    type: PetType,
     image: string,
     name: string;
     color: string;
@@ -135,6 +137,30 @@ export const Pet = {
 
     getAll: (): Pet[] =>{
         return data;
+    },
+
+    getFromType: (type: PetType): Pet[] =>{
+
+        return data.filter(item =>{
+            if(item.type === type){
+                return true
+            }else{
+                return false;
+            }
+        })
+
+    },
+
+    getFromName: (name: string) => {
+
+        return data.filter(item =>{
+            if(item.name.toLocaleLowerCase().indexOf(name.toLocaleLowerCase()) > -1){
+                return true;
+            }else{
+                return false
+            }
+        })
+
     }
 
 }
