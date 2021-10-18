@@ -3,14 +3,16 @@ import { Request, Response } from 'express';
 
 export const home = (req: Request, res: Response) =>{
 
-    res.send('home no controoler');
+   // res.send('home no controoler');
+
+   res.render('pages/page')
 
 
 }
 
 export const dogs = (req: Request, res: Response) =>{
 
-    res.send('dogs');
+   res.send('dogs');
 
 
 
