@@ -1,8 +1,13 @@
 
 {{>partials/header}}
 
-<section class="banner" style="background-image: url(images/allanimals.jpg);">Todos os animas</section>
-<h2>Todos os animais disponíveis para doação</h2>
+
+{{#banner}}
+
+<section class="banner" style="background-image: url(images/{{background}});">{{title}}</section>
+<h2>{{title}} disponíveis para doação</h2>
+
+{{/banner}}
 
 
 <div class="container list">
